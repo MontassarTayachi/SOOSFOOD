@@ -1,0 +1,149 @@
+.contact {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+}
+
+.contact .leftSide {
+  height: 100%;
+  flex: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact .rightSide {
+  padding-left: 50px;
+  height: 100%;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .rightSide h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 10;
+  font-size: 40px;
+  color: white;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+
+form input {
+  padding: 10px;
+  height: 40px;
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid rgba(51, 51, 51, 0.342);
+  color: white;
+  background-color: rgba(24, 23, 23, 0.568);
+  margin: 20px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+form textarea {
+  margin-top: 15px;
+  height: 70px;
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid rgba(51, 51, 51, 0.342);
+  color: white;
+  background-color: rgba(24, 23, 23, 0.568);
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+input::placeholder,
+textarea::placeholder {
+  font-weight: bold;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(255, 252, 252);
+}
+
+form label {
+  margin-top: 15px;
+  color: white;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  width: 140px;
+  height: 40px;
+  border: none;
+  background-color: #0caa48;
+  color: whitesmoke;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+form button:hover{
+  transform: scale(1.1);
+}
+form button:hover svg{
+  animation: slide 1s ease-in-out infinite;
+}
+form button svg{
+  margin-left: 3px;
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+@media only screen and (max-height: 601px) {
+  .contact{
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contact {
+    flex-direction: column;
+    height: auto;
+  }
+  .contact .leftSide{
+    min-height: 40vh;
+  }
+  .contact .rightSide{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+ form{
+   padding-top: 15px;
+   width: 100%;
+   align-items: center;
+ }
+ input, textarea{
+   text-align: center;
+ }
+}
+@media only screen and (max-width: 650px){
+  .contact .rightSide h1 {
+    font-size: 40px;
+   }
+}

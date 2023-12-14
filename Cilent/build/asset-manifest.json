@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7b75d8ea.css",
+    "main.js": "/static/js/main.c463dff4.js",
+    "static/js/787.46fb8f97.chunk.js": "/static/js/787.46fb8f97.chunk.js",
+    "static/media/Chopsticks.jpg": "/static/media/Chopsticks.092b373cc9147b1a6518.jpg",
+    "static/media/Contact.jpg": "/static/media/Contact.85bae891573133c9296e.jpg",
+    "static/media/Tataki.jpg": "/static/media/Tataki.daf3ec7d418fa2a9876c.jpg",
+    "static/media/Sushis.jpg": "/static/media/Sushis.57d92e13580cd3483917.jpg",
+    "static/media/Hero.jpg": "/static/media/Hero.645d0c1ba970888cf2c8.jpg",
+    "static/media/SushisVeggie.jpg": "/static/media/SushisVeggie.a08b07512a13efa6c3df.jpg",
+    "static/media/Ramen.jpg": "/static/media/Ramen.ee370454eb3fe0480aaa.jpg",
+    "static/media/Gyozas.jpg": "/static/media/Gyozas.b7dbe90a876507959f88.jpg",
+    "static/media/Assortiment.jpg": "/static/media/Assortiment.ea9ee5f6cbf3c84143e3.jpg",
+    "static/media/SushiLogo.png": "/static/media/SushiLogo.8bc2a5accc401a8a8b3c.png",
+    "index.html": "/index.html",
+    "main.7b75d8ea.css.map": "/static/css/main.7b75d8ea.css.map",
+    "main.c463dff4.js.map": "/static/js/main.c463dff4.js.map",
+    "787.46fb8f97.chunk.js.map": "/static/js/787.46fb8f97.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b75d8ea.css",
+    "static/js/main.c463dff4.js"
+  ]
+}

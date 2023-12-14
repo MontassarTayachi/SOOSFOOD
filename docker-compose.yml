@@ -1,0 +1,54 @@
+version: "3"
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "3001:80"
+    volumes:
+      - ./web:/usr/share/nginx/html
+  server:
+    image: node:18.17.1
+    container_name: server
+    working_dir: /app
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - "4000:4000"
+    volumes:
+      - "./server/:/app"
+  web_client:
+    image: node:18.17.1
+    container_name: web_client
+    working_dir: /src
+    command: sh -c "npm install && npm start"
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./Cilent/:/src"
+      
+  web_admin:
+    image: node:18.17.1
+    container_name: web_admin
+    working_dir: /src
+    command: sh -c "npm install && npm start"
+    ports:
+      - "80:3000"
+    volumes:
+      - "./admin resto/:/src"
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 2002
+      POSTGRES_DB: sosfood  
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./db-data:/var/lib/postgresql/data"
+    container_name: sosfood-db
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

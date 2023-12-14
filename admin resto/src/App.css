@@ -1,0 +1,112 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+.container{
+  display:block;
+}
+main{
+  width: 100%;
+  padding: 20px;
+}
+.sidebar {
+  position: fixed;
+  color: #fff;
+  height: 97%;
+  width: 40%;
+  margin-right: 30px;
+  transition: all 0.1s;
+}
+
+.sidebar::before {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  margin-top: 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: #ffffff;
+  background: linear-gradient(#052cad67, #0115308a),url(https://i.etsystatic.com/23444619/r/il/6a2b50/2958612098/il_fullxfull.2958612098_l692.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Adjust the pixel value as needed */
+  z-index: -1;
+ 
+  
+}
+
+
+.top_section{
+  display: flex;
+  align-items:center;
+  padding:20px 15px;
+}
+.logo{
+  width: 170px;
+  height: 150;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-family: cursive;
+}
+.bars{
+  display: block;
+  font-size: 25px;
+  top: auto;
+  color: #fff;
+}
+.link{
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-family: cursive;
+  
+}
+.link:hover{
+ 
+  border-radius: 10px;
+  background:rgb(74, 110, 133);
+  opacity: .2;
+  color: white;
+  transition: all 0.5s;
+}
+
+.active{
+  margin: 2px;
+  border-radius: 10px;
+  background: rgba(237, 240, 241, 0.267);
+  color: #ffffff;
+ 
+}
+.icon, .link_text{
+  font-size: 20px;
+}
+
+.vertical {
+  transform: rotate(90deg);
+  transform-origin: left top 0 ;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+body {
+  margin: 0; /* Supprimer les marges par défaut */
+  padding: 0; /* Supprimer les espaces de remplissage par défaut */
+  background-color: white; /* Fond blanc pour l'impression */
+}
+
+
+.container {
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+
+}
